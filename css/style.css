@@ -180,7 +180,8 @@ body {
   position: relative;
   z-index: 50;
   overflow: hidden;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+  height: 100vh; }
   @media (max-width: 600px) {
     .content {
       margin-left: 0; } }
@@ -264,10 +265,14 @@ body {
   overflow: hidden;
   background-image: linear-gradient(to right bottom, rgba(187, 225, 250, 0.9), rgba(15, 76, 117, 0.9)), url("../img/background1.jpg");
   background-size: cover;
-  background-position: top; }
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   @media (max-width: 600px) {
     .aboutme {
-      padding-left: 4rem; } }
+      padding-left: 4rem;
+      padding: 3rem 1rem; } }
   .aboutme__textbox {
     text-align: center; }
   .aboutme__heading {
@@ -534,6 +539,10 @@ body {
     .interests {
       padding: 2.5rem;
       padding-right: 1.5rem; } }
+  @media (max-width: 600px) {
+    .interests {
+      padding: 2.5rem;
+      padding-right: 1.5rem; } }
   .interests:target {
     opacity: 1;
     visibility: visible;
@@ -552,15 +561,6 @@ body {
     @media (max-width: 700px) {
       .interests__container {
         flex-direction: column; } }
-  .interests__heading {
-    text-align: center;
-    margin-bottom: 3rem;
-    background-color: black;
-    color: white;
-    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
-    align-self: flex-start;
-    order: -3;
-    margin: 0 auto; }
   .interests__card {
     flex: 0 0 30%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -582,6 +582,9 @@ body {
     @media (max-width: 900px) {
       .interests__icon {
         font-size: 3rem; } }
+    @media (max-width: 600px) {
+      .interests__icon {
+        font-size: 2rem; } }
   .interests__subheading {
     color: white;
     font-size: 2.5rem;
@@ -590,6 +593,9 @@ body {
     @media (max-width: 900px) {
       .interests__subheading {
         font-size: 1.75rem; } }
+    @media (max-width: 600px) {
+      .interests__subheading {
+        font-size: 1.25rem; } }
   .interests__paragraph {
     color: white;
     font-size: 1.3rem;
