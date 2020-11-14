@@ -1,222 +1,242 @@
 <!DOCTYPE html>
+
 <html>
-    <head>
-        <title>Anand Pal</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Anand Pal</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fontawesome-free-5.13.0-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
 
-        <link rel="stylesheet" href="css/style.css">
-        
-        <link rel="stylesheet" type="text/css" href="fontawesome-free-5.13.0-web/css/all.css">
-    </head>
+      <div class="navigation__background">&nbsp;</div>
 
-    <body>
-        <main>
-            <div class="container">
-                <div class="usernav">
-                    <ul class="usernav__list">
-                        <li class="usernav__item">
-                            <a href="#aboutme" class="usernav__link">
-                                <i class="fas fa-address-card usernav__icon"></i>
-                                <p class="usernav__link-text">About Me</p>
-                            </a>
-                        </li>
-                        <li class="usernav__item">
-                            <a href="#education" class="usernav__link">
-                                <i class="fas fa-school usernav__icon"></i>
-                                <p class="usernav__link-text">Education</p>
-                            </a>
-                        </li>
-                        <li class="usernav__item">
-                            <a href="#whatido" class="usernav__link">
-                                <i class="fas fa-briefcase usernav__icon"></i>
-                                <p class="usernav__link-text">What I Do</p>
-                            </a>
-                        </li>
-                        <li class="usernav__item">
-                            <a href="#interests" class="usernav__link">
-                                <i class="fas fa-heart usernav__icon"></i>
-                                <p class="usernav__link-text">Interests</p>
-                            </a>
-                        </li>
-                        <li class="usernav__item">
-                            <a href="#contact" class="usernav__link">
-                                <i class="fas fa-american-sign-language-interpreting usernav__icon"></i>
-                                <p class="usernav__link-text">Contact</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="content">
-                   <div class="aboutme" id="aboutme">
-                       <div class="aboutme__container">
-                            <figure class="photo">
-                                <img src="img/profile.jpg" alt="" class="photo__img">
-                                <figcaption class="photo__caption">Welcome</figcaption>
-                            </figure>
-                            <div class="aboutme__textbox">
-                                <h1 class="aboutme__heading">Anand Pal</h1>
-                                <p class="aboutme__paragraph">
-                                    Hello Folks !! <br>
-                                    I am Anand Pal,
-                                    a budding web developer, here to develop the most astonishing websites for you.
-                                </p>
-                            </div>  
-                       </div>
-                   </div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#intro" class="navigation__link">01 About Me</a></li>
+          <li class="navigation__item"><a href="#education" class="navigation__link">02 Education</a></li>
+          <li class="navigation__item"><a href="#about" class="navigation__link">03 What I Do?</a></li>
+          <li class="navigation__item"><a href="#interests" class="navigation__link">04 Interests</a></li>
+          <li class="navigation__item"><a href="#contact" class="navigation__link">05 Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="intro" id="intro">
+      <div class="container">
+        <div class="intro__left" data-aos="fade-up">
+          <img
+            src="./Web design resources/Group 206@2x.png"
+            alt=""
+            class="intro__img"
+          />
+        </div>
+        <div class="intro__right" data-aos="fade-up">
+          <h1 class="intro__heading">Hi, I'm <br />Anand Pal</h1>
+          <p class="intro_paragraph">
+            "A budding web developer, here to develop the most astonishing
+            website for you"
+          </p>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,224L48,234.7C96,245,192,267,288,250.7C384,235,480,181,576,176C672,171,768,213,864,208C960,203,1056,149,1152,149.3C1248,149,1344,203,1392,229.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+    <!--  ***********************************************EDUCATION*************************************************** -->
+    <div class="education" id="education">
+      <div class="container">
+        <div class="education__left" data-aos="zoom-out">
+          <h1 class="heading__primary">Education Details</h1>
 
-
-                   <div class="whatido" id="whatido">
-
-                       <div class="whatido__box">
-                            <h2 class="whatido__heading">
-                                What I Do
-                            </h2>
-                            <div class="whatido__paragraph">
-                                A Student and an Enthusiastic Web Developer, 
-                                Passionate About Designing Most Stunning Websites and Have a Keen Interest in Understanding Latest Technologies.
-                            </div>
-
-                            <h2 class="whatido__heading">
-                                Skills
-                            </h2>
-                            <div class="skillbox">
-                                <p class="skillbox__text">C/C++</p>
-                                <p class="skillbox__text">Data Structures</p>
-                                <p class="skillbox__text">Java</p>
-                                <p class="skillbox__text">Advanced Java</p>
-                                <p class="skillbox__text">Python</p>
-                                <p class="skillbox__text">HTML</p>
-                                <p class="skillbox__text">CSS</p>
-                                <p class="skillbox__text">Bootstrap</p>
-                                <p class="skillbox__text">Javascript</p>
-                                <p class="skillbox__text">JQuery</p>
-                            </div>
-                       </div>
-
-                   </div>
-                   <div class="education" id="education">
-                       
-                    <!-- /*Background Video*/ -->
-                    <div class="education__video">
-                            <video class="education__video-content" autoplay muted loop>
-                                <source src="img/background2.mp4">
-                            </video>
-                    </div>
-
-                    <div class="education__box">
-                        <i class="fas fa-university education__icon"></i>
-                        <div class="education__details">
-                            <p class="education__text">
-                                Currently Pursuing BE Degree in Computer Engineering from Vivekanand Education Society's Institute of Technology
-                                ,Mumbai University.
-                            </p>
-                        </div>
-                        <div class="education__details">
-                            <p class="education__text">
-                                Completed Diploma in Computer Engineering from Vivekanand Education Society's Polytechnic, MSBTE  in the year 2019.
-                            </p>
-                        </div>
-                    </div>
-
-                   </div>
-
-                   <div class="interests" id="interests">
-    
-                        <div class="interests__container">
-                            
-                            <div class="interests__card">
-                                <i class="fas fa-microchip interests__icon"></i>
-                                <h2 class="interests__subheading">Tech enthusiast
-                                </h2>
-                                <p class="interests__paragraph">
-                                    Insatiable thirst helps me to be abreast of new devices, technologies and simply solutions that enhance our experiences.
-                                </p>
-                            </div>
-
-                            <div class="interests__card">
-                                <i class="fas fa-gamepad interests__icon"></i>
-                                <h2 class="interests__subheading">MMO Battle Royale Games
-                                </h2>
-                                <p class="interests__paragraph">
-                                    A ticking timer with a shrinking map and death at every step is my type of gameplay!
-                                </p>
-                            </div>
-
-                            <div class="interests__card">
-                                <i class="fas fa-music interests__icon"></i>
-                                <h2 class="interests__subheading">Thriller Movies
-                                </h2>
-                                <p class="interests__paragraph">
-                                    What comes next? If a movie trailer gives me this impression then count me in!
-                                </p>
-                            </div>
-                        </div>
-
-                   </div>
-
-                   <div class="contact" id="contact">
-
-                    <div>
-                    <div class="contact__text">
-                        <h1 class="contact__heading">Reach Out To Me</h1>
-                    </div>
-
-                    <div class="card__container">
-                        <div class="card">
-                            <i class="fas fa-phone-square-alt card__icon"></i>
-                            <div class="card__textbox">
-                                <h2 class="card__heading card__text">Phone</h2>
-                                <p class="card__text-1">+91 7506563731</p>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <i class="fab fa-linkedin card__icon"></i>
-                            <div class="card__textbox">
-                                <h2 class="card__heading"><a href="https://www.linkedin.com/in/anandnpal/" class="card__text">LinkedIn</a></h2>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <i class="fas fa-envelope-square card__icon"></i>
-                            <div class="card__textbox">
-                                <h2 class="card__heading"><a href="anand.pal2900@gmail.com" class="card__text">Mail</a></h2>
-                                <p class="card__text"></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- <img src="img/sprite1.svg#icon-facebook2" alt="" class="card__icon"> -->
-                            <i class="fab fa-facebook-square card__icon"></i>
-                            <div class="card__textbox">
-                                <h2 class="card__heading"><a href="https://www.facebook.com/anand.pal.12" class="card__text">Facebook</a></h2>
-                                <p class="card__text"></p>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <i class="fab fa-instagram-square card__icon"></i>
-                            <div class="card__textbox">
-                                <h2 class="card__heading"><a href="https://www.instagram.com/_anand_pal_/" class="card__text">Instagram</a></h2>
-                                <p class="card__text"></p>
-                            </div>
-                        </div>
-                        
-
-                    </div>
-                   
-                    <div class="legal">
-                        <div class="legal__text">© Designed and Developed By Anand Pal</div>       
-                    </div>
-                </div>
-                    
-                   
-                   </div>
-                </div>
+          <div class="education__text">
+            <div class="education__text-left">
+              <img
+                src="./Web design resources/Group 207@2x.png"
+                alt=""
+                class="bullet"
+              />
             </div>
 
-        </main>
-    </body>
+            <div class="education__text-right">
+              <p class="paragraph">
+                Currently Pursuing BE Degree in Computer Engineering from
+                Vivekanand Education Society's Institute of Technology ,Mumbai
+                University.
+              </p>
+            </div>
+          </div>
+
+          <div class="education__text">
+            <div class="education__text-left">
+              <img
+                src="./Web design resources/Group 208@2x.png"
+                alt=""
+                class="bullet"
+              />
+            </div>
+
+            <div class="education__text-right">
+              <p class="paragraph">
+                Completed Diploma in Computer Engineering from Vivekanand
+                Education Society's Polytechnic, MSBTE in the year 2019.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="education__right" data-aos="zoom-out">
+          <img
+            src="./Web design resources/institute-illustration@2x.png"
+            alt=""
+            class="education__img"
+          />
+        </div>
+      </div>
+    </div>
+    <!--  **************************************ABOUT************************************************************ -->
+    <div class="about" id="about">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,218.7C672,245,768,267,864,272C960,277,1056,267,1152,245.3C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container__2">
+        <div class="about__left" data-aos="zoom-out">
+          <img
+            src="./Web design resources/Group 209@2x.png"
+            alt=""
+            class="about__img"
+          />
+        </div>
+        <div class="about__right" data-aos="zoom-out">
+          <h1 class="heading__primary color_white">What I Do?</h1>
+          <p class="paragraph color_white margin-top-small">
+            A Student and an Enthusiastic Web Developer, Passionate About
+            Designing Most Stunning Websites and Have a Keen Interest in
+            Understanding Latest Technologies.
+          </p>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 310">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,288L48,261.3C96,235,192,181,288,149.3C384,117,480,107,576,133.3C672,160,768,224,864,224C960,224,1056,160,1152,117.3C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+    <!--  ********************************************INTERESTS****************************************************** -->
+    <div class="interests" id="interests">
+      <div class="container">
+        <h1 class="heading__primary center">My Interests</h1>
+      </div>
+      <div class="container__1">
+        <div class="card" data-aos="flip-left">
+          <i class="fas fa-microchip card__icon center"></i>
+          <h1 class="heading__secondary color_white center">
+            Tech <br />Enthusiast
+          </h1>
+          <div class="content">
+            <p class="paragraph__content">
+              Insatiable Thirst Helps Me To Be Abreast Of New Devices,
+              Technologies And Simply Solutions That Enhance Our Experiences.
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="flip-left">
+          <i class="fas fa-gamepad card__icon center"></i>
+          <h1 class="heading__secondary color_white center">
+            MMO BATTLE <br />
+            ROYALE GAMES
+          </h1>
+          <div class="content">
+            <p class="paragraph__content">
+              A Ticking Timer With A Shrinking Map And Death At Every Step Is My
+              Type Of Gameplay!
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="flip-left">
+          <i class="fas fa-file-video card__icon center"></i>
+          <h1 class="heading__secondary color_white center">
+            THRILLER <br />MOVIES
+          </h1>
+          <div class="content">
+            <p class="paragraph__content">
+              What Comes Next? If A Movie Trailer Gives Me This Impression Then
+              Count Me In!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  ************************************************CONTACT************************************************** -->
+
+    <div class="contact" id="contact">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,192L48,192C96,192,192,192,288,186.7C384,181,480,171,576,144C672,117,768,75,864,101.3C960,128,1056,224,1152,250.7C1248,277,1344,235,1392,213.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <h1 class="heading__primary color_white">Reach out to me:</h1>
+      </div>
+      <div class="container__1">
+        <div class="card_1" data-aos="zoom-out">
+          <i class="fas fa-mobile card__icon center"></i>
+          <h1 class="heading__secondary-1 center color_white">PHONE</h1>
+        </div>
+        <div class="card_1" data-aos="zoom-out">
+          <i class="fas fa-envelope card__icon center"></i>
+          <h1 class="heading__secondary-1 center color_white">MAIL</h1>
+        </div>
+        <div class="card_1" data-aos="zoom-out">
+          <i class="fab fa-linkedin card__icon center"></i>
+          <h1 class="heading__secondary-1 center color_white">LINKEDIN</h1>
+        </div>
+        <div class="card_1" data-aos="zoom-out">
+          <i class="fab fa-instagram card__icon center"></i>
+          <h1 class="heading__secondary-1 center color_white">INSTAGRAM</h1>
+        </div>
+      </div>
+      <p class="credits">Designed By technotornz</p>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 175,
+        duration: 1250,
+      });
+    </script>
+    
+  </body>
 </html>
